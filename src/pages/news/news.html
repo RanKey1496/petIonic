@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle color="primary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>News</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="no-padding">
+  <ion-card class="card-background-page" *ngFor="let n of news">
+    <img class="card-image" (click)="openDetail(n)" src="{{n.image}}"/>
+    <div class="data">
+      <div class="card-title" (click)="openDetail(n)">{{n.title}}</div>
+      <div class="card-date"><ion-icon name="ios-planet-outline"></ion-icon> {{n.date}}</div>  
+      <div class="card-favorite" (click)="toggleFavorite(n)">
+        <ion-icon [name]="n.liked ? 'heart' :'heart-outline'"></ion-icon> {{n.favorites}}
+      </div>
+    </div>
+  </ion-card>
+</ion-content>

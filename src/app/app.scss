@@ -1,0 +1,75 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face{
+    font-family: Lato-Thin;
+    src: url('../assets/fonts/Lato-Thin.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: Lato-Light;
+    src: url('../assets/fonts/Lato-Light.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: Lato-Regular;
+    src: url('../assets/fonts/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: Lato-Bold;
+    src: url('../assets/fonts/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: Lato-Black;
+    src: url('../assets/fonts/Lato-Black.woff2') format('woff2');
+}
+
+.menu {
+    font-family: Lato-Light;
+
+    .logo {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .user{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+    
+    .city{
+        font-size: 1em;
+        color: map-get($colors, neta);
+    }
+    
+    .title {
+        font-size: 2em;
+        background-color: #fff;
+    }
+}
+
+.no-scroll .scroll-content{
+    overflow: hidden;
+}
+
+.background-gray {
+    background-color: map-get($colors, isabelline);
+}

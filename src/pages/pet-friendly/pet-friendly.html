@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle color="primary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pet Friendly</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="no-scroll back">
+  <div #pleaseConnect id="please-connect">
+    <p>Please connect to the Internet...</p>
+  </div>
+  <div #map id="map" class="map"></div>
+  <div class="info">
+    <ion-list no-lines>
+      <ion-item>
+        <h1 class="site">Veterinaria Carmenchischcicicaas</h1>
+        <span item-right (click)="closeDetail()"><ion-icon name="close"></ion-icon></span>
+      </ion-item>
+      <ion-item>
+        <span>Horario</span>
+        <p>Lunes - Domingo: 10 AM - 9 PM</p>
+        <p>Lunes - Domingo: 10 AM - 9 PM</p>
+      </ion-item>
+      <ion-item>
+        <span>Dirección</span>
+        <p>Calle 30a #75-34</p>
+        <p>Medellín, Colombia</p>
+      </ion-item>
+      <ion-item>
+        <span>Telefonos</span>
+        <p>+57 (312) 281 8064</p>
+        <p>+57 (034) 859 0242</p>
+      </ion-item>
+    </ion-list>
+    <button ion-button full color="route">
+      Mostrar ruta
+    </button>
+  </div>
+  <div class="user">
+    <ion-item>
+      <h1 text-center>Esta es tu posición</h1>
+      <span item-right (click)="closeUser()"><ion-icon name="close"></ion-icon></span>
+    </ion-item>
+  </div>
+</ion-content>

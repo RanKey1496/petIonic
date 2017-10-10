@@ -1,0 +1,18 @@
+<ion-menu [content]="content">
+  <ion-content class="menu" text-center>
+    <img class="logo" src="assets/img/logo.png">
+    <h1 text-uppercase class="user">Jerry R Sun</h1>
+    <p no-padding no-margin class="city"><ion-icon name="pin"></ion-icon> Medellín, Colombia</p>
+    <ion-list no-lines margin-top>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"
+        class="title" text-center detail-none>
+        {{p.title}}
+        <!-- <p class="notification" *ngIf="p.notifications">
+            {{p.notifications}}
+        </p> -->
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

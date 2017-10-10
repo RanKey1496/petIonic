@@ -1,0 +1,52 @@
+page-pet-friendly {
+
+    #please-connect {
+        position: absolute;
+        background-color: #000;
+        opacity: 0.5;
+        width: 100%;
+        height: 40%;
+        z-index: 1;
+    }
+    
+    #please-connect p {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        font-size: 1.6em;
+        top: 30%;
+     }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        position: relative;
+        max-height: 50%;
+        height: 0%;
+        width: 100%;
+
+        ion-list {
+            margin: 0;
+            background-color: transparent;
+            ion-label {
+                margin: 5px 8px 5px 0;
+            }
+        }
+
+        button {
+            margin: 0 10px 0 10px;
+            width: 95%;
+            bottom: 0;
+        }
+    }
+
+    .user {
+        position: relative;
+        width: 100%;
+        height: 0%;
+    }
+}
