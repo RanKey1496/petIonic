@@ -106,6 +106,9 @@ export const mapStyle = [
                 "gamma": 0.5
             },
             {
+                "lightness": 50
+            },
+            {
                 "visibility": "on"
             }
         ]

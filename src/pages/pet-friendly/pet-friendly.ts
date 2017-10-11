@@ -41,9 +41,9 @@ export class PetFriendlyPage {
     this.info = this.element.nativeElement.getElementsByClassName('info')[0];
     this.user = this.element.nativeElement.getElementsByClassName('user')[0];
     
-    this.renderer.setElementStyle(this.map, 'webkitTransition', 'height 1000ms');
-    this.renderer.setElementStyle(this.info, 'webkitTransition', 'height 1000ms');
-    this.renderer.setElementStyle(this.user, 'webkitTransition', 'height 1000ms');
+    this.renderer.setElementStyle(this.map, 'webkitTransition', 'height 1500ms');
+    this.renderer.setElementStyle(this.info, 'webkitTransition', 'height 1500ms');
+    this.renderer.setElementStyle(this.user, 'webkitTransition', 'height 1500ms');
   }
 
   ionViewDidLoad() {
