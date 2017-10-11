@@ -1,18 +1,27 @@
-<!--
-  Generated template for the VeterinariesPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Veterinaries</ion-title>
+    <button ion-button menuToggle color="primary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Veterinarias</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content class="background-gray">
+    <ion-item *ngFor="let v of vets; let i = index">
+      <div class="logo">
+        <img src="https://unsplash.it/8{{i}}/80" alt="">
+      </div>
+      <div class="info">
+        <ion-card>
+          <img class="card-image" src="https://unsplash.it/23{{i}}/180"/>
+          <div class="data">
+            <div class="card-title">{{v.title}}</div>
+            <div class="card-dir">{{v.dir}}</div>
+          </div>
+          <div class="card-distance">{{v.distance}} km</div>
+        </ion-card>
+      </div>
+    </ion-item>
 </ion-content>
