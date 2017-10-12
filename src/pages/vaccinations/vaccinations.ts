@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the VaccinationsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-vaccinations',
@@ -15,7 +8,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VaccinationsPage {
 
+  pets: Array<{ name: string, species: string, breed?: string }>;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pets = [
+      { name: 'Rayo McQueen', species: 'Carro', breed: 'Veloz'},
+      { name: 'Manuela', species: 'PonyDrilo', breed: 'Lindis'},
+      { name: 'Prana', species: 'Gata', breed: 'De la calle'},
+      { name: 'Mondá', species: 'Nutria'},
+    ]
   }
 
   ionViewDidLoad() {
