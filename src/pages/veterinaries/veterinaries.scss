@@ -3,100 +3,81 @@ page-veterinaries {
     ion-item {
         width: 100%;
         height: 180px;
-        margin: 10px !important;
 
-        .logo {
+        .background{
+            filter: hue-rotate(-10deg) contrast(0.9) brightness(0.8) saturate(1.5);
+
             position: absolute;
             top: 0;
             left: 0;
 
-            width: 30%;
+            width: 100%;
             height: 100%;
-
-            background-color: map-get($colors, platinum);
-
-            text-align: center;
-            img {
-                position: relative;
-                top: 27%;
-                width: 80px;
-                height: 80px;
-
-                border-radius: 50%;
-                border: 2px solid #000;
-            }
         }
 
-        .info {
+        .data {
             position: absolute;
-            top: 0;
-            right: 0;
+            bottom: 15px;
+            left: 15px;
 
-            width: 70%;
-            height: 100%;
+            width: 100%;
 
-            ion-card {
-                font-family: Lato-Light;
-                margin: 0 0 0 0 !important;
+            .title {
+                position: relative;
+                top: 0;
 
-                width: 100%;
-            }
+                width: 95%;
+                max-height: 2.4em;
 
-            .card-image {
-                filter: brightness(60%);
+                font-size: 2.0em;
 
-                width: 100%;
-                height: 100%;
-            }
-
-            .data {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                
-                width: 100%;
-
-                padding-right: 20px;
-
-                .card-title {
-                    position: relative;
-                    top: 0;
-                    width: 100%;
-
-                    color: #fff;
-
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    font-size: 2.0em;
-                    font-weight: bold;
-                }
-
-                .card-dir {
-                    position: relative;
-                    bottom: 0px;
-
-                    width: 100%;
-
-                    margin-top: 5px;
-
-                    color: #fff;
-
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    font-size: 1.5em;
-                }
-            }
-
-            .card-distance {
-                position: absolute;
-                top: 10px;
-                left: 180px;
-
-                width: 100%;
-                
                 color: #fff;
+                
+                overflow: hidden;
+            }
+
+            .sub {
+                position: relative;
+                bottom: 0;
+                margin-top: 5px;
+                
+                width: 100%;
+                max-height: 40px;
+
+                font-family: Lato-Light;
+
+                .logo {
+                    width: 40px;
+                    height: 40px;
+
+                    border-radius: 50%;
+                }
+    
+                .opinions {
+                    display: flex;
+                    align-items: center;
+
+                    margin-left: 10px;
+                    padding: 6px 10px 6px 10px;
+                    
+                    color: #fff;
+                    background-color: rgba($color: #000, $alpha: 0.3);
+
+                    border-radius: 15px;
+                }
+    
+                .distance {
+                    display: flex;
+                    align-items: center;
+
+                    margin-left: 10px;
+                    padding: 6px 10px 6px 10px;
+                    
+                    color: #fff;
+                    background-color: rgba($color: #000, $alpha: 0.3);
+
+                    border-radius: 15px;
+                }
             }
         }
     }

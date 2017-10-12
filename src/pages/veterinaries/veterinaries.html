@@ -4,24 +4,29 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Veterinarias</ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary">
+        <ion-icon name="ios-search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content class="background-gray">
+  <ion-list no-lines>
     <ion-item *ngFor="let v of vets; let i = index">
-      <div class="logo">
-        <img src="https://unsplash.it/8{{i}}/80" alt="">
-      </div>
-      <div class="info">
-        <ion-card>
-          <img class="card-image" src="https://unsplash.it/23{{i}}/180"/>
-          <div class="data">
-            <div class="card-title">{{v.title}}</div>
-            <div class="card-dir">{{v.dir}}</div>
-          </div>
-          <div class="card-distance">{{v.distance}} km</div>
-        </ion-card>
+      <img class="background" src="https://unsplash.it/36{{i}}/180"/>
+      <div class="data">
+        <div class="title" text-wrap>{{v.title}}</div>
+        <div class="sub">
+          <ion-row>
+            <img class="logo" src="https://unsplash.it/8{{i}}/80" alt="">
+            <div class="opinions">+85</div>
+            <div class="distance">{{v.distance}} KM</div>
+          </ion-row>
+        </div>
       </div>
     </ion-item>
+  </ion-list>
 </ion-content>
